@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dss:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: diff-search-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: default
